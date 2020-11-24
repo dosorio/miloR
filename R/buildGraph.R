@@ -163,9 +163,9 @@ buildGraph <- function(x, k=10, d=50, transposed=FALSE, get.distance=FALSE,
         old.dist <- as(old.dist, "dgCMatrix")
         nhoodDistances(x) <- old.dist
 
-        sink(file="/dev/null")
-        gc()
-        sink(file=NULL)
+        #sink(file="/dev/null")
+        #gc()
+        #sink(file=NULL)
     }
 
     x
