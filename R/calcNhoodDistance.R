@@ -196,10 +196,10 @@ calcNhoodDistance <- function(x, d, reduced.dim=NULL, use.assay="logcounts"){
                 if(ncol(sp.out) != nrow(sp.out)){
                     stop("Matrix corrupted - dimensions are not the same size")
                 }
-                sink(file="/dev/null")
+                #sink(file="/dev/null")
                 rm(list=c(".tmp.i", ".tmp.j"))
-                gc()
-                sink(file=NULL)
+                #gc()
+                #sink(file=NULL)
                 print(dim(sp.out))
             }
         }
