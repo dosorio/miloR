@@ -274,9 +274,9 @@ findNhoodMarkers <- function(x, da.res, da.fdr=0.1, assay="logcounts",
             rownames(i.model) <- rownames(i.meta)
         }
 
-        sink(file="/dev/null")
+        #sink(file="/dev/null")
         gc()
-        sink(file=NULL)
+        #sink(file=NULL)
 
         if(assay == "logcounts"){
             i.res <- .perform_lognormal_dge(exprs, i.model, model.contrasts=i.contrast,
