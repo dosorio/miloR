@@ -166,9 +166,9 @@ makeNhoods <- function(x, prop=0.1, k=21, d=30, refined=TRUE, reduced_dims="PCA"
         return(list(random.vertices, vertex.list))
     }
 
-    sink(file="/dev/null")
-    gc()
-    sink(file=NULL)
+    #sink(file="/dev/null")
+    #gc()
+    #sink(file=NULL)
 }
 
 
