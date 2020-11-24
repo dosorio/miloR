@@ -70,9 +70,9 @@ calcNhoodDistance <- function(x, d, reduced.dim=NULL, use.assay="logcounts"){
     }
 
     # ensure garbage collection
-    sink(file="/dev/null")
+    #sink(file="/dev/null")
     gc()
-    sink(file=NULL)
+    #sink(file=NULL)
     # all.dist <- .aggregate_dists.hard(nhoods(x), nhood.dists, colnames(x))
     # strictly this only actually needs to be a list of distance matrices
     nhoodDistances(x) <- nhood.dists
